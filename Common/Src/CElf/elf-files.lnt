@@ -1,0 +1,4 @@
+../Src/CElf.cpp
+../Src/CElfSection.cpp
+../Src/ElfStringTable.cpp
+../Src/CElfSymbolTable.cpp

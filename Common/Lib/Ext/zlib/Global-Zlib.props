@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <ZLib_Dir>$(CommonDir)\Lib\Ext\zlib\1.2.5</ZLib_Dir>
+    <!--IsDebug: search for 'Debug' in Configuration-->
+    <IsDebug>$([System.Convert]::ToString( $([System.Text.RegularExpressions.Regex]::IsMatch($(Configuration), '[Dd]ebug'))))</IsDebug>
+	  
+    <!--platform-->
+    <ZLibShortPlatform Condition="'$(Platform)' == 'Win32'">x86</ZLibShortPlatform>
+    <ZLibShortPlatform Condition="'$(Platform)' == 'x64'">x64</ZLibShortPlatform>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="$([System.Convert]::ToBoolean($(IsDebug)))">
+      <!-- debug macros -->
+      <PropertyGroup Label="UserMacros">
+        <ZLibConfigSuffix>Debug</ZLibConfigSuffix>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <!-- other/release macross -->
+      <PropertyGroup Label="UserMacros">
+        <ZLibConfigSuffix>Release</ZLibConfigSuffix>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ZLib_Dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ZLib_Dir)\contrib\vstudio\vc10\$(ZLibShortPlatform)\ZlibStat$(ZLibConfigSuffix);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ZLib_Dir">
+      <Value>$(ZLib_Dir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

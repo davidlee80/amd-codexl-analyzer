@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="elf-d.lnt">
+      <Filter>Lint Files</Filter>
+    </None>
+    <None Include="elf.lnt">
+      <Filter>Lint Files</Filter>
+    </None>
+    <None Include="elf-x64-d.lnt">
+      <Filter>Lint Files</Filter>
+    </None>
+    <None Include="elf-x64.lnt">
+      <Filter>Lint Files</Filter>
+    </None>
+    <None Include="elf-files.lnt">
+      <Filter>Lint Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lint Files">
+      <UniqueIdentifier>{8a1442c9-821b-42b8-b6d8-1f60ae080687}</UniqueIdentifier>
+      <Extensions>lnt</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{eba5015f-261b-4b99-8256-4cf36781568f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5d6c6687-b3d3-4ec0-9a26-bccdbbd38af7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CElf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\elf_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\elf32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\elf64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\CElf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CElfSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CElfStringTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CElfSymbolTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

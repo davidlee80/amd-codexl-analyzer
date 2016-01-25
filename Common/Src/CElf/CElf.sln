@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CElf", "CElf.vcxproj", "{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Debug|Win32.Build.0 = Debug|Win32
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Debug|x64.ActiveCfg = Debug|x64
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Debug|x64.Build.0 = Debug|x64
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Release|Win32.ActiveCfg = Release|Win32
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Release|Win32.Build.0 = Release|Win32
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Release|x64.ActiveCfg = Release|x64
+		{503F5DBA-76F1-4131-9E2F-FD1F8CE8397F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+../../../Common/Lint/Global-x86.lnt
+../../../Common/Lint/Global-Release.lnt
+../../../Common/Lint/Global-Common.lnt
+elf-files.lnt
